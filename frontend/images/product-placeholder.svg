@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420" role="img" aria-label="Grocery product image placeholder">
+  <rect width="640" height="420" fill="#edf8ef"/>
+  <path d="M185 155h270l-22 150H207z" fill="#48a65b"/>
+  <path d="M245 155c0-58 150-58 150 0" fill="none" stroke="#276d37" stroke-width="22" stroke-linecap="round"/>
+  <circle cx="260" cy="205" r="27" fill="#ed5c5c"/><circle cx="325" cy="202" r="29" fill="#ffca42"/><circle cx="390" cy="210" r="28" fill="#ff8d3d"/>
+  <text x="320" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" fill="#276d37">Grocery product</text>
+</svg>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | Shadow Stack Grocery Store</title>
+    <link rel="stylesheet" href="../css/Profile CSS.css">
+    <script src="https://kit.fontawesome.com/5471644867.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="profile-page">
+        <header class="profile-header">
+            <a href="Home Page HTML.html" class="back-link"><i class="fas fa-arrow-left"></i> Continue shopping</a>
+            <button id="logout-button" class="logout-button"><i class="fas fa-sign-out-alt"></i> Log out</button>
+        </header>
+        <section class="welcome-card">
+            <div class="avatar"><i class="fas fa-user"></i></div>
+            <div><p class="eyebrow">MY ACCOUNT</p><h1 id="profile-name">Loading your profile…</h1><p id="profile-email"></p></div>
+        </section>
+        <section class="profile-grid">
+            <article class="panel"><h2><i class="fas fa-user-circle"></i> Login information</h2>
+                <dl id="account-details" class="details-list"></dl>
+            </article>
+            <article class="panel"><h2><i class="fas fa-box"></i> My orders</h2>
+                <div id="orders" class="orders"><p class="muted">Loading orders…</p></div>
+            </article>
+        </section>
+    </main>
+    <script src="../js/profile-api.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#277a45">
+    <title>Your Cart | Shadow Stack Grocery Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/Shopping Cart CSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="../js/store-api.js" defer></script>
+</head>
+<body>
+    <header class="cart-header">
+        <a class="brand" href="Home Page HTML.html" aria-label="Shadow Stack home"><span>Shadow</span>Stack</a>
+        <a class="continue-link" href="Home Page HTML.html"><i class="fa-solid fa-arrow-left"></i> Continue shopping</a>
+    </header>
+
+    <main class="container">
+        <div class="page-intro">
+            <div>
+                <p class="eyebrow">YOUR BASKET</p>
+                <h1>Shopping cart</h1>
+                <p class="item-count"><span id="cartItemLabel">0 items</span> selected for delivery</p>
+            </div>
+            <div class="secure-note"><i class="fa-solid fa-shield-heart"></i><span>Freshness guaranteed<br><small>Secure checkout</small></span></div>
+        </div>
+
+        <div class="cart">
+            <section class="products" aria-label="Cart items"></section>
+
+            <aside class="cart-total" aria-label="Order summary">
+                <h2>Order summary</h2>
+                <div class="bill-summary">
+                    <div class="summary-row"><span>Subtotal</span><strong id="originalPrice">₹0</strong></div>
+                    <div class="summary-row saving-row"><span>Shopping savings <small>(12%)</small></span><strong id="totalSave">− ₹0</strong></div>
+                    <div class="summary-row total-row"><span>Total</span><strong id="totalPrice">₹0</strong></div>
+                </div>
+                <p class="delivery-note"><i class="fa-solid fa-truck-fast"></i> Delivery options available at checkout</p>
+                <a class="checkout-button" href="Details For Checkout HTML.html">Proceed to checkout <i class="fa-solid fa-arrow-right"></i></a>
+                <p class="payment-note"><i class="fa-solid fa-lock"></i> Payments are secure and encrypted</p>
+            </aside>
+        </div>
+    </main>
+</body>
+</html>

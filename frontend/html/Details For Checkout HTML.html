@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Details For Delivery</title>
+
+    <link rel="stylesheet" href="../css/Details For Checkout CSS.css">
+
+    <script src="../js/Details For Checkout JS.js"></script>
+    <script src="../js/store-api.js" defer></script>
+
+</head>
+
+<body>
+
+    <div class="contact-in">
+
+        <div class="contact-map">
+
+            <iframe 
+                src="https://www.google.com/maps?q=Haldwani,Uttarakhand&output=embed"
+                width="100%" 
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+
+        </div>
+
+
+        <div class="contact-form">
+
+            <h1 align="center">Details For Delivery</h1>
+
+            <div id="error_message" style="color:red;text-align:center;"></div>
+
+
+            <form class="address_form"
+                action="Payment HTML.html"
+                method="get"
+                onsubmit="return validate_form();">
+
+
+                <input 
+                    type="text" 
+                    id="name" 
+                    class="contact-form-txt" 
+                    placeholder="Name" 
+                    required>
+
+
+                <input 
+                    type="text" 
+                    id="address" 
+                    class="contact-form-txt" 
+                    placeholder="Address" 
+                    required>
+
+
+                <input 
+                    type="email" 
+                    id="email" 
+                    class="contact-form-txt" 
+                    placeholder="Email" 
+                    required>
+
+
+                <input 
+                    type="text" 
+                    id="locality" 
+                    class="contact-form-txt" 
+                    placeholder="Locality / Apartment" 
+                    required>
+
+
+                <input 
+                    type="text" 
+                    id="pincode" 
+                    class="contact-form-txt" 
+                    placeholder="Pincode" 
+                    required>
+
+
+                <input 
+                    type="tel" 
+                    id="phone" 
+                    class="contact-form-txt" 
+                    placeholder="Contact Number" 
+                    required>
+
+
+                <input 
+                    type="date" 
+                    id="date" 
+                    class="contact-form-txt" 
+                    required>
+
+
+                <input 
+                    type="text" 
+                    id="time" 
+                    class="contact-form-txt"
+                    placeholder="Time Slot (10:00 AM - 12:00 PM)" 
+                    required>
+
+
+                <button 
+                    type="submit" 
+                    class="contact-form-btn">
+                    Submit
+                </button>
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#287a46">
+    <title>Secure Payment | Shadow Stack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/Payment CSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header class="payment-header">
+        <a class="brand" href="Home Page HTML.html"><span>Shadow</span>Stack</a>
+        <a class="back-link" href="Details For Checkout HTML.html"><i class="fa-solid fa-arrow-left"></i> Delivery details</a>
+    </header>
+
+    <main class="payment-page">
+        <section class="payment-intro">
+            <p class="eyebrow">FINAL STEP</p>
+            <h1>Complete your purchase</h1>
+            <p>Your payment information is encrypted and never stored on our servers.</p>
+        </section>
+
+        <div class="payment-layout">
+            <section class="payment-panel" aria-label="Card payment form">
+                <div class="panel-heading"><div><h2>Card details</h2><p>Enter the details exactly as they appear on your card.</p></div><span class="secure-badge"><i class="fa-solid fa-lock"></i> Secure</span></div>
+
+                <div class="card-container" aria-hidden="true">
+                    <div class="front">
+                        <div class="card-top"><img class="chip" src="../images/card%20left.png" alt=""><img class="visa" src="../images/visa.png" alt=""></div>
+                        <div class="card-number-box">•••• •••• •••• ••••</div>
+                        <div class="card-bottom"><div><span>Card holder</span><strong class="card-holder-name">YOUR NAME</strong></div><div><span>Expires</span><strong><span class="exp-month">MM</span> / <span class="exp-year">YY</span></strong></div></div>
+                    </div>
+                    <div class="back"><div class="stripe"></div><div class="back-content"><span>Security code</span><div class="cvv-box">•••</div><img src="../images/visa.png" alt=""></div></div>
+                </div>
+
+                <form action="Payment Confirmation HTML and CSS.html">
+                    <label class="inputBox"><span>Card number</span><div class="input-with-icon"><i class="fa-regular fa-credit-card"></i><input type="text" inputmode="numeric" autocomplete="cc-number" maxlength="19" class="card-number-input" placeholder="1234 5678 9012 3456" required></div></label>
+                    <label class="inputBox"><span>Name on card</span><input type="text" autocomplete="cc-name" class="card-holder-input" placeholder="Name as shown on card" required></label>
+                    <div class="flexbox">
+                        <label class="inputBox"><span>Expiry month</span><select class="month-input" autocomplete="cc-exp-month" required><option value="" selected disabled>MM</option><option>01</option><option>02</option><option>03</option><option>04</option><option>05</option><option>06</option><option>07</option><option>08</option><option>09</option><option>10</option><option>11</option><option>12</option></select></label>
+                        <label class="inputBox"><span>Expiry year</span><select class="year-input" autocomplete="cc-exp-year" required><option value="" selected disabled>YY</option><option>2026</option><option>2027</option><option>2028</option><option>2029</option><option>2030</option><option>2031</option></select></label>
+                        <label class="inputBox cvv-field"><span>CVV <i class="fa-regular fa-circle-question" title="The 3 or 4 digit security code on your card"></i></span><input type="text" inputmode="numeric" autocomplete="cc-csc" maxlength="4" class="cvv-input" placeholder="•••" required></label>
+                    </div>
+                    <button type="submit" class="submit-btn">Pay securely <i class="fa-solid fa-arrow-right"></i></button>
+                    <p class="form-footnote"><i class="fa-solid fa-shield-heart"></i> Protected by secure encryption</p>
+                </form>
+            </section>
+
+            <aside class="trust-panel"><div class="trust-icon"><i class="fa-solid fa-shield-heart"></i></div><h2>Shop with confidence</h2><p>We use industry-standard security practices to protect your checkout.</p><ul><li><i class="fa-solid fa-check"></i> Encrypted payment details</li><li><i class="fa-solid fa-check"></i> No card information stored</li><li><i class="fa-solid fa-check"></i> Safe, reliable delivery</li></ul></aside>
+        </div>
+    </main>
+    <script src="../js/Payment JS.js"></script>
+    <script src="../js/store-api.js"></script>
+</body>
+</html>
