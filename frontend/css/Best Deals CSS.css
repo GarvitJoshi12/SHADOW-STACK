@@ -88,3 +88,10 @@ button {
 #next {
     right: 15px;
 }
+
+@media (max-width: 600px) {
+    body { min-height:100vh; height:auto; padding:20px 14px; display:grid; place-items:center; }
+    .container { position:relative; top:auto; left:auto; transform:none; width:100%; min-width:0; padding:16px; }
+    #prev, #next { width:34px; height:34px; }
+    #prev { left:8px; } #next { right:8px; }
+}

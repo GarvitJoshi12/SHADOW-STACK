@@ -1,135 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
 
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
+:root { --green:#287a46; --deep:#183c29; --mint:#edf8ef; --ink:#24372b; --muted:#6e8075; }
+* { box-sizing:border-box; }
+body { margin:0; background:#f7fbf8; color:var(--ink); font-family:"DM Sans",Arial,sans-serif; }
+a { color:inherit; text-decoration:none; }
+.about-page { width:min(1180px,92%); min-height:100vh; margin:auto; padding:28px 0 34px; }
+.about-nav { display:flex; align-items:center; justify-content:space-between; }
+.brand { color:var(--deep); font:700 27px "Playfair Display",serif; letter-spacing:-.8px; }.brand span { color:var(--green); }
+.home-link { display:inline-flex; align-items:center; gap:8px; color:var(--green); font-size:14px; font-weight:700; }.home-link:hover { color:#185a33; }
+.about-hero { display:grid; grid-template-columns:1.12fr .88fr; align-items:center; gap:clamp(45px,8vw,115px); min-height:calc(100vh - 145px); padding:58px clamp(18px,6vw,76px); margin-top:25px; overflow:hidden; border:1px solid #dcebe0; border-radius:28px; background:linear-gradient(132deg,#fff 0%,#f7fcf8 52%,#e1f3e6 100%); }
+.eyebrow { margin:0 0 14px; color:var(--green); font-size:11px; font-weight:700; letter-spacing:1.8px; }
+h1 { max-width:620px; margin:0; color:var(--deep); font:700 clamp(42px,5vw,68px)/1.04 "Playfair Display",serif; letter-spacing:-2.6px; }
+.intro { max-width:570px; margin:23px 0 27px; color:var(--muted); font-size:16px; line-height:1.75; }
+.highlights { display:grid; gap:12px; }.highlights article { display:flex; align-items:center; gap:13px; }.highlights i { display:grid; place-items:center; width:38px; height:38px; flex:0 0 38px; border-radius:11px; background:var(--mint); color:var(--green); font-size:15px; }.highlights strong,.highlights span { display:block; }.highlights strong { color:var(--deep); font-size:14px; }.highlights span { margin-top:2px; color:var(--muted); font-size:12px; }
+.shop-button { display:inline-flex; align-items:center; gap:10px; margin-top:30px; padding:13px 19px; border-radius:9px; background:var(--green); color:#fff; font-size:14px; font-weight:700; box-shadow:0 10px 20px #286a3d2b; transition:.2s; }.shop-button:hover { transform:translateY(-2px); background:#1f6239; }
+.brand-card { position:relative; display:grid; place-items:center; min-height:360px; overflow:hidden; border-radius:25px; background:linear-gradient(150deg,#205e39,#3e9b5c); color:#fff; text-align:center; box-shadow:0 25px 45px #215d352e; }.brand-card img { position:relative; z-index:1; width:min(145px,42%); padding:17px; border-radius:24px; background:#fff; box-shadow:0 15px 28px #103d2390; }.brand-card p { position:relative; z-index:1; margin:20px 0 0; font:500 19px/1.45 "Playfair Display",serif; }.card-orbit { position:absolute; border:1px solid #ffffff42; border-radius:50%; }.orbit-one { width:390px; height:390px; }.orbit-two { width:255px; height:255px; border-style:dashed; }
+.about-footer { display:flex; align-items:center; justify-content:space-between; padding:25px 7px 0; color:var(--muted); font-size:13px; }.social-links { display:flex; gap:8px; }.social-links a { display:grid; place-items:center; width:34px; height:34px; border:1px solid #d8e6dc; border-radius:8px; color:var(--green); transition:.2s; }.social-links a:hover { border-color:var(--green); background:var(--green); color:#fff; }
 
-.section {
-    width: 100%;
-    min-height: 100vh;
-	background: #c8efd1;
-}
-
-.container {
-    width: 80%;
-    display: block;
-    margin: auto;
-    padding-top: 100px;
-}
-
-.content-section {
-    float: left;
-    width: 55%;
-}
-
-.image-section {
-    float: right;
-    width: 40%;
-}
-
-.image-section img {
-    width: 100%;
-    height: auto;
-}
-
-.content-section .title {
-    text-transform: uppercase;
-    font-size: 28px;
-}
-
-.content-section .content h3 {
-    margin-top: 20px;
-    color: #5d5d5d;
-    font-size: 19px;
-}
-
-.content-section .content p {
-    margin-top: 10px;
-    font-size: 17px;
-    line-height: 1.5;
-}
-
-.content-section .content .button {
-    margin-top: 30px;
-}
-
-.content-section .content .button a {
-    background-color: #3d3d3d;
-    padding: 12px 40px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 25px;
-    letter-spacing: 1.5px;
-}
-
-.content-section .content .button a:hover {
-    background-color: #a52a2a;
-    color: #fff;
-}
-
-.content-section .social {
-    margin: 40px 40px;
-}
-
-.content-section .social i {
-    color: black;
-    font-size: 30px;
-    padding: 0px 10px;
-}
-
-.content-section .social i:hover {
-    transition: 0.4s all ease-out;
-    cursor: pointer;
-    color: #32b350;
-}
-
-@media screen and (max-width: 768px) {
-    .container {
-        width: 80%;
-        display: block;
-        margin: auto;
-        padding-top: 50px;
-    }
-
-    .content-section {
-        float: none;
-        width: 100%;
-        display: block;
-        margin: auto;
-    }
-
-    .image-section {
-        float: none;
-        width: 100%;
-        display: block;
-        margin: auto;
-    }
-
-    .image-section img {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin: auto;
-    }
-
-    .content-section .title {
-        text-align: center;
-        font-size: 19px;
-    }
-    
-    .content-section ,.content .button {
-        text-align: center;
-    }
-
-    .content-section .content .button a {
-        padding: 9px 30px;
-    }
-
-    .content-section .social {
-        text-align: center;
-    }
-
-}
+@media (max-width: 800px) { .about-page { width:90%; padding-top:20px; }.about-hero { grid-template-columns:1fr; gap:40px; min-height:0; padding:45px 28px; }.brand-card { min-height:270px; max-width:500px; width:100%; margin:auto; } }
+@media (max-width: 480px) { .about-page { width:92%; }.brand { font-size:23px; }.home-link { font-size:12px; }.about-hero { padding:38px 20px; border-radius:20px; }.eyebrow { font-size:9px; letter-spacing:1.3px; } h1 { font-size:39px; letter-spacing:-1.5px; }.intro { font-size:14px; line-height:1.65; }.brand-card { min-height:230px; border-radius:20px; }.brand-card p { font-size:17px; }.about-footer { flex-direction:column; gap:13px; padding-top:20px; } }

@@ -62,3 +62,9 @@ body{
 	cursor:pointer;
     font-weight: 1000px;
 }
+
+@media (max-width: 480px) {
+    body { padding:20px 16px; }
+    .rating-css { width:100%; max-width:400px; height:auto; min-height:230px; }
+    .rating-css input + label { font-size:clamp(38px,13vw,60px); }
+}

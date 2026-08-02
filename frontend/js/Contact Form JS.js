@@ -17,9 +17,12 @@ function validate(){
         error_message.innerHTML=text;
         return false;
     }
-    if(email.indexof("@") == -1 || email.length < 6){
+    if(email.indexOf("@") == -1 || email.length < 6){
         text="Please enter a valid E-mail ID.";
         error_message.innerHTML=text;
         return false;
     }
+
+    window.location.href = "Contact Form Confirm HTML and CSS.html";
+    return false;
 }
